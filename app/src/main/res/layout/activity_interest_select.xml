@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_with_mobile_layout"
+    android:background="#FF495AFF"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="32sp"
+        android:text="选择你兴趣的领域"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="#FFFFFFFF"
+        android:layout_height="1dp"></View>
+    <View
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="#FFFFFFFF"
+        android:layout_height="1dp"></View>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:text="好的"
+        android:background="@drawable/shape"
+        android:layout_height="40dp" />
+</LinearLayout>
