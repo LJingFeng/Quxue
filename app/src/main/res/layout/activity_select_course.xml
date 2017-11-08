@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<com.example.jinfeng.quxue.MyTitleLayout
+    android:id="@+id/course_titlelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</com.example.jinfeng.quxue.MyTitleLayout>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/course_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="为你推荐"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/teacher_recomand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

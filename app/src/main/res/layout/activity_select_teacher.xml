@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.jinfeng.quxue.MyTitleLayout
+        android:id="@+id/teacher_titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.jinfeng.quxue.MyTitleLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我关注的老师"
+        android:textSize="12sp"
+        android:textColor="#61000000"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/teacher_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
+ <!-- 在这里应该还要再加一个RecyclerVIew可以存放其他的信息-->

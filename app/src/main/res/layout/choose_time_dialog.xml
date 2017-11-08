@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF"
+    android:padding="36dp"
+    android:layout_height="280dp">
+    <TextView
+
+        android:textColor="#FF000000"
+        android:textSize="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择时长"/>
+    <Button
+        android:id="@+id/set_time_30"
+        android:layout_marginTop="10dp"
+        android:text="30分钟"
+        android:background="@color/smssdk_transparent"
+        android:textSize="16sp"
+        android:textColor="#FF1867FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/set_time_60"
+        android:layout_marginTop="10dp"
+        android:text="60分钟"
+        android:background="@color/smssdk_transparent"
+        android:textSize="16sp"
+        android:textColor="#FF1867FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/set_time_90"
+        android:layout_marginTop="10dp"
+        android:text="90分钟"
+        android:background="@color/smssdk_transparent"
+        android:textSize="16sp"
+        android:textColor="#FF1867FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/set_time"
+        android:layout_marginTop="10dp"
+        android:text="自定义"
+        android:background="@color/smssdk_transparent"
+        android:textSize="16sp"
+        android:textColor="#FF1867FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

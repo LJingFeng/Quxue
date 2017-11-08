@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rec"
+        android:title="为你推推荐">
+    </item>
+    <group android:menuCategory="container"
+        android:visible="true"
+        android:enabled="true">
+    <item
+        android:id="@+id/my_course"
+        android:title="我的课程">
+    </item>
+    <item
+        android:id="@+id/collection"
+        android:title="我的收藏">
+    </item>
+    </group>
+</menu>

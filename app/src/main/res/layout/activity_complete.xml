@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/complete_outside_linealayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+    <com.example.jinfeng.quxue.MyTitleLayout
+        android:id="@+id/complete_titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.jinfeng.quxue.MyTitleLayout>
+
+    <ScrollView android:id="@+id/complete_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_marginBottom="30dp"
+            android:id="@+id/compeltefram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+
+                android:background="@drawable/card_background"
+                android:id="@+id/complete_peple_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/complete_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:text="Teacher Name"
+                    android:textColor="#FF000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/complete_class_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:text="Teacher Name"
+                    android:textColor="#FF1867FF"
+                    android:textSize="12sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="课程标题"
+                    android:textColor="#61000000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/complete_class_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#61000000"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="请选择上课时长" />
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/complete_class_choosetimebtn"
+            android:layout_width="45dp"
+            android:layout_height="24dp"
+
+            android:background="#00000000"
+            android:text="30" />
+
+        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分钟"/>
+    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="请选择授课模式" />
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/online"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:padding="16dp"
+                            android:text="线上"
+                            android:textColor="#61000000" />
+
+                        <RadioButton
+                            android:id="@+id/offline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:text="线上"
+                            android:textColor="#61000000" />
+                    </RadioGroup>
+                      </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="众筹时长"
+                    android:textColor="#61000000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/complete_class_crowdingtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:textColor="#61000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="目标金额"
+                    android:textColor="#61000000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/complete_class_targeymoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:textColor="#61000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="目标人数"
+                    android:textColor="#61000000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/complete_class_targetNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:textColor="#61000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/complete_teacher_head"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/appicon2" />
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>
+

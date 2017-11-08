@@ -1,56 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg_12"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:background="@drawable/login01">
     <ImageView
         android:id="@+id/back_color_change"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background"
-        android:layout_centerInParent="true"/>
-<LinearLayout xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="欢迎来到趣学"
-        android:layout_marginLeft="16dp"
-        android:textColor="#FFFFFFFF"
-        android:layout_marginTop="80dp"
-        android:textSize="32sp"
-        android:layout_height="wrap_content" />
-<LinearLayout
-
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:gravity="center">
-    <Button
-        android:id="@+id/login_with_mobile"
-        android:textColor="#FFFFFFFF"
-         android:layout_marginBottom="20dp"
-        android:text="手机登录"
-        android:background="@drawable/shape"
-        android:layout_marginTop="200dp"
-        android:layout_width="328dp"
-        android:layout_height="40dp"/>
-    <Button
-        android:id="@+id/login_with_qq"
-        android:textColor="#FFFFFFFF"
-        android:background="@drawable/shape"
-        android:text="QQ登录 "
-        android:layout_gravity="center"
-        android:gravity="center_vertical"
-        android:drawableLeft="@drawable/ic_qq_white"
-        android:paddingLeft="130dp"
-        android:layout_width="328dp"
-        android:layout_height="40dp"
-     />
-</LinearLayout>
-</LinearLayout>
+        android:layout_centerInParent="true"
+        android:background="@drawable/background" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:text="欢迎来到趣学"
+            android:textColor="#FFFFFFFF"
+            android:textSize="32sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/login_with_mobile"
+                android:layout_width="328dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/shape"
+                android:text="手机登录"
+                android:textColor="#FFFFFFFF" />
+            <Button
+                android:id="@+id/login_with_qq"
+                android:layout_width="328dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape"
+                android:drawableLeft="@drawable/ic_qq_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="130dp"
+                android:text="@string/qq"
+                android:textColor="#FFFFFFFF"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

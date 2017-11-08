@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login02">
+
+    <ImageView
+        android:id="@+id/input_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/login_with_mobile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:text="接收短信验证码"
+            android:textColor="#FFFFFFFF"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:id="@+id/Code_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="请输验证码"
+                android:textColor="#CCFFFFFF"
+                android:textColorHint="#CCFFFFFF"
+                android:textSize="20sp"
+                android:theme="@style/MyEditText" />
+
+            <Button
+                android:id="@+id/resend_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="重新发送"
+                android:textColor="#FFFFFFFF" />   <!--这里是设置倒计时的地-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/show_wrong"
+            android:layout_width="150dp"
+            android:layout_height="15dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/mobile_login_in"
+            android:layout_width="328dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/shape"
+            android:enabled="true"
+            android:text="登录"
+            android:textColor="#FFFFFFFF" />
+
+    </LinearLayout>
+</RelativeLayout>

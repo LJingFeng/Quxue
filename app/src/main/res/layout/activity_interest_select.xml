@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login01">
+
+    <ImageView
+        android:id="@+id/back_color_change"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/login_with_mobile_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#FF495AFF"
     android:orientation="vertical">
+
     <TextView
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
-        android:textColor="#FFFFFFFF"
-        android:textSize="32sp"
-        android:text="选择你兴趣的领域"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
+        android:text="选择你兴趣的领域"
+        android:textColor="#FFFFFFFF"
+        android:textSize="32sp" />
+
     <View
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:background="#FFFFFFFF"
-        android:layout_height="1dp"></View>
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF"></View>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:padding="20dp"></android.support.v7.widget.RecyclerView>
+
     <View
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:background="#FFFFFFFF"
-        android:layout_height="1dp"></View>
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF"></View>
+
     <Button
+        android:id="@+id/ok"
         android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:layout_margin="10dp"
-        android:text="好的"
         android:background="@drawable/shape"
-        android:layout_height="40dp" />
+        android:text="好的" />
 </LinearLayout>
+</RelativeLayout>
